@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Self-Care Journey</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <a href="#gallery">Gallery</a>
+    <a href="#narrative">Narrative</a>
+    <a href="#reflection">Reflection</a>
+    <span class="nav-name">Carina Huang</span>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">NURS 180 · Self-Care Project</p>
+      <h1>My Mindful <br>Creative Practice</h1>
+      <p class="hero-sub">
+        A personal gallery documenting my self-care journey through sticker art,
+        diamond art, perler beads, and gratitude paper stars.
+      </p>
+      <a href="#gallery" class="btn">View My Work</a>
+      <button class="btn btn-outline" id="openModalHero">Add New Entry</button>
+    </div>
+    <div class="hero-badges">
+      <span>✦ Sticker Art</span>
+      <span>💎 Diamond Art</span>
+      <span>⬡ Perler Beads</span>
+      <span>⭐ Gratitude Stars</span>
+    </div>
+  </header>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2>My Gallery</h2>
+        <p>A record of everything I've made — sorted by most recent.</p>
+      </div>
+
+      <!-- Filter bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Sticker Art">✦ Sticker Art</button>
+        <button class="filter-btn" data-filter="Diamond Art">💎 Diamond Art</button>
+        <button class="filter-btn" data-filter="Perler Beads">⬡ Perler Beads</button>
+        <button class="filter-btn" data-filter="Gratitude Stars">⭐ Gratitude Stars</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Cards injected by JS -->
+      </div>
+
+      <div class="empty-state" id="emptyState">
+        <p>✨ No entries yet — add your first piece below!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NARRATIVE -->
+  <section class="written-section" id="narrative">
+    <div class="container written-container">
+      <h2>Project Narrative</h2>
+
+      <h3>Introduction</h3>
+      <p>For my self-care creative project, I chose mindful activities (i.e., sticker art, diamond art, paper stars, and Perler beads) as my strategy. As a CS student who has a lot of exams, homework, and overthinking in relationships, I often find myself stressing, which comes from anxious thoughts internally or stress over external deadlines. The easy and repetitive nature of these activities creates a great sense of calmness and satisfaction, which is a very effective stress-relieving coping strategy for me. I chose to make a website to present my artwork because it offers accessible upload features and lets me display everything together in a visually appealing way, using my web development skills and creativity.</p>
+
+      <h3>Course Theory Concepts</h3>
+      <p>Similar to meditation and connecting with nature, the main cause of stress relief is mindfulness, which is a practice to bring attention to the present moment. Research has shown that mindful activities can lower stress and support healthier well-being (Bartlett et al., 2021). Tasks like carefully placing a diamond into its slot or folding a paper star require just enough focus to occupy the part of the mind that would otherwise be used for overthinking, which causes anxiety and stress. In other words, it helps activate the body's relaxation response and counteract physiological stress arousal. Connecting to the physiology of stress, these activities are effective relaxation responses that help decrease stress through two self-care domains: emotional and psychological.</p>
+
+      <h3>Self-Care Domains</h3>
+      <p>In the emotional domain, we can shift negative emotions to positive ones by engaging in mindfulness activities, which decrease negative emotions and increase well-being and happiness (Butler et al., 2019). This builds general emotional well-being rather than just offering temporary relief, due to the pleasurable and satisfying nature of these repetitive mindful activities. The psychological domain also involves similar activities, but focuses on the mind. As explained by the article, self-awareness and mindful attention are ways to improve self-care in the psychological domain. As Shapiro et al. (2007) said, self-awareness is an "unbiased observation of one's inner experience and behaviour." Each time I sit down with these crafts, I notice myself entering a flow state, fully absorbed in the present task without judging my thoughts or performance, which is itself a form of psychological self-care. Maintaining the website extends this into the psychological domain as well: organizing the parts of the website gave me a low-pressure way to notice patterns in when and why I reached for this particular form of self-care. The mindful activities that I did all involved being in a flow state and completely paying attention to the present moment without judgment, which is healthy for the mind.</p>
+
+      <h3>Conclusion</h3>
+      <p>Through this project, I identified a self-care strategy that genuinely works for me: engaging in mindful, tactile crafts like sticker art, diamond art, and paper stars whenever I notice emotional or psychological stress building up. What surprised me most was how much value came not just from the crafting itself but from building a dedicated space to document it, which made the practice feel ongoing and intentional rather than incidental. Going forward, I intend to keep this practice as a regular part of my routine, especially during stressful moments in future semesters, and to keep adding to the website as a way of tracking my own self-care over time rather than treating it as a one-term assignment.</p>
+      <style>
+        .ref-list {
+          list-style: none;
+          padding-left: 0;
+        }
+        .ref-list li {
+          padding-left: 2em;
+          text-indent: -2em;
+          margin-bottom: 1em;
+          line-height: 1.5;
+        }
+      </style>
+      
+      <h3>References</h3>
+      <ol class="ref-list">
+        <li>Bartlett, L., Buscot, M.-J., Bindoff, A., Chambers, R., & Hassed, C. (2021). Mindfulness is associated with lower stress and higher work engagement in a large sample of MOOC participants. <em>Frontiers in Psychology, 12</em>, 724126. https://doi.org/10.3389/fpsyg.2021.724126</li>
+        <li>Butler, L. D., Mercer, K. A., McClain-Meeder, K., Horne, D. M., & Dudley, M. (2019). Six domains of self-care: Attending to the whole person. <em>Journal of Human Behavior in the Social Environment, 29</em>(1), 107–124. https://doi.org/10.1080/10911359.2018.1482483</li>
+        <li>Shapiro, S. L., Brown, K. W., & Biegel, G. M. (2007). Teaching self-care to caregivers: Effects of mindfulness-based stress reduction on the mental health of therapists in training. <em>Training and Education in Professional Psychology, 1</em>(2), 105–115. https://doi.org/10.1037/1931-3918.1.2.105</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FINAL REFLECTION -->
+  <section class="written-section written-section--alt" id="reflection">
+    <div class="container written-container">
+      <h2>Final Reflection</h2>
+      <style>
+        .signature {
+          display: block;
+          text-align: right;
+        }
+      </style>
+      <p>Dear future me, <br> <br>
+        How are you doing? I hope you are feeling blessed and happy in your life, especially in love and education. I have just overcome May and June, which have been the most extraordinary journey of my life. You probably will never forget it. Remember doing the digital detox for three days? It miraculously reduced a lot of my stress and anxiety. I learned how to focus inward, becoming less interested in social media and no longer caring about others' external validation as much. As a result, I became more focused and present.
+        <br><br>I'm glad I took NURS 180 during this period because it helped me prioritize self-care. The main takeaways from this course are the six domains of self-care — physical, professional, relational, emotional, psychological, and spiritual (Butler et al., 2019) — along with the self-care plan, which has helped me maintain balance in life and improve my well-being. I hope you continue using the plan to guide you. I learned to embrace the fact that everyone is different, having different journeys, values, and beliefs. The spiritual slides also taught me to have faith and hope in life regardless of challenges, as hope makes life more meaningful (Abramson, 2024; Hopper, 2025).
+       <br> <br>I was in awe of the comfort and excellence of every classmate I had in-class discussions with, because everyone seemed to have very good ideas and respect each other. Having these discussions made me feel more connected and not alone.
+        <br> <br>Moreover, I discovered stress reduction techniques like meditation and mindful art activities that I can do regularly. Also, I have been picking up new hobbies like reading and writing. I hope you become a better writer and CS student. Also, read the books I bought for you!
+        <br> <br>I believe you have better knowledge than I right now, and always remember to keep going, learning, and loving.
+        <br> <br>Here is a quote for you: "Happiness lies in the joy of achievement and the thrill of creative effort." — Franklin D. Roosevelt.
+        <span class="signature">Your past self,<br>June 21st, 2026</span>
+
+    </p>
+
+    <h3>References</h3>
+      <ol class="ref-list">
+        <li>Abramson, A. (2024). Hope as the antidote. Https://Www.apa.org. https://www.apa.org/monitor/2024/01/trends-hope-greater-meaning-life</li>
+        <li>Butler, L. D., Mercer, K. A., McClain-Meeder, K., Horne, D. M., & Dudley, M. (2019). Six domains of self-care: Attending to the whole person. <em>Journal of Human Behavior in the Social Environment, 29</em>(1), 107–124. https://doi.org/10.1080/10911359.2018.1482483</li>
+        <li>Hopper, E. (2025). How Hope Helps Us Build a Meaningful Life. Greater Good. https://shorturl.at/l7nTS</li>
+      </ol>
+     
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox-overlay" id="lightboxOverlay">
+    <button type="button" class="lightbox-close" id="lightboxClose">✕</button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev">‹</button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+    <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext">›</button>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <!-- UPLOAD MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <h2 id="modalTitle">Add New Entry</h2>
+        <button type="button" class="modal-close" id="closeModal" aria-label="Close">✕</button>
+      </div>
+
+      <form class="upload-form" id="uploadForm">
+        <div class="form-group">
+          <label for="mediaInput">Photo or Video</label>
+          <div class="drop-zone" id="dropZone">
+            <input type="file" id="mediaInput" accept="image/*,video/*" multiple />
+            <div class="drop-zone-content" id="dropZoneContent">
+              <span class="drop-icon">📁</span>
+              <p>Click to choose files or drag & drop here</p>
+              <p class="drop-hint">Up to 4 photos or videos</p>
+            </div>
+          </div>
+          <div class="drop-preview-grid" id="dropPreview"></div>
+        </div>
+
+        <div class="form-group">
+          <label>Type of Craft</label>
+          <div class="craft-selector" id="craftSelector">
+            <label class="craft-option">
+              <input type="radio" name="craftType" value="Sticker Art" />
+              <span>✦ Sticker Art</span>
+            </label>
+            <label class="craft-option">
+              <input type="radio" name="craftType" value="Diamond Art" />
+              <span>💎 Diamond Art</span>
+            </label>
+            <label class="craft-option">
+              <input type="radio" name="craftType" value="Perler Beads" />
+              <span>⬡ Perler Beads</span>
+            </label>
+            <label class="craft-option">
+              <input type="radio" name="craftType" value="Gratitude Stars" />
+              <span>⭐ Gratitude Stars</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="entryDate">Date Completed</label>
+          <input type="date" id="entryDate" />
+        </div>
+
+        <div class="form-group">
+          <label for="entryTitle">Title <span class="optional">(optional)</span></label>
+          <input type="text" id="entryTitle" placeholder="e.g. Sunset diamond painting" />
+        </div>
+
+        <div class="form-group">
+          <label for="entryCaption">Reflection / Caption <span class="optional">(optional)</span></label>
+          <textarea id="entryCaption" rows="3" placeholder="How did this activity make you feel? What were you grateful for?"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-full">Add to Gallery ✦</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with 💛 for NURS 180 · Self-Care Project</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
