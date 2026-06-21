@@ -22,9 +22,9 @@ const HARDCODED_ENTRIES = [
     title: 'A Beadful Afternoon',
     caption: "I'm getting so much better at this. I was so focused and mindful. Very relaxing and fun.",
     media: [
-      { type: 'image', dataUrl: 'media/beadful-1.jpg' },
-      { type: 'image', dataUrl: 'media/beadful-2.jpg' },
-      { type: 'image', dataUrl: 'media/beadful-3.jpg' },
+        { type: 'image', dataUrl: 'media/beadful-3.jpg' },
+      { type: 'image', dataUrl: 'media/beadful-1.png' },
+      { type: 'image', dataUrl: 'media/beadful-2.png' },
     ]
   },
   {
@@ -63,7 +63,7 @@ const HARDCODED_ENTRIES = [
     title: 'Star Price Sticker Art',
     caption: "Very satisfying and calming",
     media: [
-      { type: 'image', dataUrl: 'media/starprice-1.jpg' },
+      { type: 'image', dataUrl: 'media/starprince-1.jpg' },
     ]
   },
   {
@@ -82,7 +82,7 @@ const HARDCODED_ENTRIES = [
     title: 'Diamond Art Completed',
     caption: "Satisfying. Calming.",
     media: [
-      { type: 'image', dataUrl: 'media/diamondart2-1.jpg' },
+      { type: 'image', dataUrl: 'media/diamondart-1.jpg' },
     ]
   },
   {
